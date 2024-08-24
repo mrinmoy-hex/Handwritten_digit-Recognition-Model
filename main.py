@@ -44,7 +44,7 @@ def train_model():
     # Train the model on the training data for 3 epochs
     # An epoch is one complete pass through the training data
     # if model's accuracy is low, consider increasing the number of epochs
-    model.fit(x_train, y_train, epochs=3)
+    model.fit(x_train, y_train, epochs=6)
 
     # Save the trained model to a file with the .keras extension
     # This allows you to load and use the model later without retraining
