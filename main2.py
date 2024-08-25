@@ -30,7 +30,7 @@ def train_model():
     # Train the model
     # An epoch is one complete pass through the training data
     # if model's accuracy is low, consider increasing the number of epochs
-    model.fit(x_train, y_train, epochs=10)
+    model.fit(x_train, y_train, epochs=50)
 
     # Save the trained model
     model.save('handwritten_model.keras')
@@ -65,10 +65,10 @@ def predict_digits(model):
 # Main code execution
 if __name__ == "__main__":
     # Train and save the model (uncomment if you want to train again)
-    # model = train_model()
+    model = train_model()
 
     # Load the pre-trained model
-    model = load_model()
+    # model = load_model()
 
     # Predict digits using the loaded model
     predict_digits(model)
